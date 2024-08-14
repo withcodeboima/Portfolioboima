@@ -1,0 +1,380 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+body{
+ font-family: sans-serif;
+ position: relative;
+}
+
+header{
+ width: 100%;
+ height: 80px;
+ background-color: #150f41;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 3;
+ padding: 0px 40px;
+}
+header .header-container{
+ background-color: #150f41;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1172px;
+ margin: 0 auto;
+ padding: 0px 80px;
+
+}
+.logo-wrapper{
+ width: auto;
+ height: 80px;
+ line-height: 80px;
+}
+.logo-image-wrapper{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ display: inline-block;
+ margin-right: 8px;
+ vertical-align: middle;
+}
+.logo-image-wrapper img{
+ display: block;
+ width:100%;
+ height: 100%;
+ border-radius: 50%;
+ object-fit: cover;
+}
+.logo-wrapper .logo-text{
+ text-decoration: none;
+ font-size: 20px;
+ font-weight: bold;
+ color: white;
+}
+header .main-navbar ul{
+ display: flex;
+ gap: 20px;
+ list-style: none;
+}
+.main-navbar a{
+ text-decoration: none;
+ color: white;
+ font-weight: bold;
+ font-size: 20PX;
+ text-transform: uppercase;
+}
+.main-navbar a:hover{
+ color: #ff4d71;
+}
+.hamburger-menu{
+ display: none;
+ background-color: transparent;
+ border: none;
+ cursor: pointer;
+ position: absolute;
+ right: 20px;
+ top: 30px;
+}
+.hamburger-menu .bar{
+ width: 20px;
+ height: 3px;
+ display: block;
+ margin-bottom: 4px;
+ background-color: white;
+}
+.hamburger-menu:hover .bar{
+ background-color: #ff4d71;
+}
+header input{
+ display: none;
+}
+/* style for main container begin*/
+main .container{
+ width: 100%;
+}
+/* section within main container*/
+.container .section{
+ height: auto;
+ padding: 80px;
+ text-align: center;
+}
+/*section for background color*/
+.container .section:nth-of-type(odd){
+ background-color: #007f99;
+}
+/* style for each section content wrapper */
+.section .section-content{
+height: 100%;
+max-width: 1172px;
+margin: 0 auto;
+
+}
+.container .section-hero{
+ background: rgb(21, 15, 65);
+ background: #00d4ff 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 80px;
+ min-height: calc(100hv - 80px);
+}
+.hero-section-content h1{
+ font-size: 36px;
+ }
+ .profile-wrapper{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 30px auto;
+ }
+ .profile-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+ }
+ .hero-section-content h2{
+  font-size: 32px;
+  margin-bottom: 12px;
+ }
+ .social-icon-wrapper i{
+  font-size: 28px;
+  margin: 8px;
+  color: white;
+  transition: all 0.5s ease;
+ }
+ .social-icon-wrapper i:hover{
+  color: #ff4d71;
+  border: 2px solid white;
+  border-radius: 50%;
+ }
+ 
+ .section-content .section-heading{
+  font-size: 36px;
+  color: #150f41;
+  margin-bottom: 16px;
+  
+ }
+ .section-content .section-tag-line{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.74);
+ }
+ .section-about .section-tag-line{
+  color: #ff4d71;
+  font-size: 32px;
+ }
+ .section-about p{
+  font-size: 22px;
+  width: 90%;
+  margin: 40px auto;
+ }
+
+ /*style experience*/
+ .experience-card-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:30px;
+  margin: 40px;
+ }
+
+ .experince-card{
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+ }
+
+ .experince-card .card-image-wrapper{
+  margin: 10px;
+ }
+
+ .experince-card li{
+  list-style: none;
+ }
+
+ .experince-card .list-heading{
+  font-weight: bold;
+  margin: 12px 8px;
+ }
+
+ /* style project card wrapper*/
+ .project-card-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 32px;
+  
+ }
+
+ .project-card{
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+ }
+
+ .project-card-1{
+  background-image: url(./image/WhatsApp\ Image\ 2024-07-31\ at\ 11.05.11.jpeg);
+ }
+
+ .project-card-2{
+  background-image: url(./image/WhatsApp\ Image\ 2024-07-31\ at\ 11.05.18.jpeg);
+ }
+
+ .project-card-3{
+  background-image: url(./image/WhatsApp\ Image\ 2024-07-31\ at\ 11.05.18\ \(1\).jpeg);
+ }
+
+ .project-card-4{
+  background-image: url(./image/WhatsApp\ Image\ 2024-07-31\ at\ 11.05.18\ \(2\).jpeg);
+ }
+
+ .project-card-5{
+  background-image: url(./image/WhatsApp\ Image\ 2024-08-09\ at\ 11.25.47.jpeg);
+ }
+
+ .project-card-6{
+  background-image: url(./image/WhatsApp\ Image\ 2024-08-09\ at\ 11.26.22.jpeg);
+ }
+
+ .project-card p{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.762);
+  color: black;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.4s ease;
+ }
+ .project-card:hover p{
+  opacity: 1;
+ }
+
+ /* style form*/
+ form{
+    background-color: white;
+    border-radius: 12px;
+    text-align: left;
+    padding: 40px 0px;
+ }
+
+ .form-field-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+ }
+
+ form .input-box, .message-box{
+    width: 50%;
+ }
+ form label{
+    display: block;
+    font-size: 20px;
+    margin: 8px 0px;
+ }
+ form input, textarea{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+ }
+
+ /*style button*/
+ form button{
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    font-size: 18px;
+    background-color: #150f41;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+ }
+ form button:hover{
+    background-color: #ff4d71;
+ }
+ footer{
+   background-color:#150f41;
+   height:40px;
+   color:white;
+
+ }
+ footer .footer-container{
+   line-height: 40px;
+   max-width: 1172px;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 18px;
+ }
+
+ /* style for making portfolio responsive */
+@media screen and (max-width: 756px) {
+   header .header-container{
+      padding: 0px 40px;
+   }
+   .hamburger-menu{
+      display: block;
+   }
+   header .main-navbar ul{
+      display: none;
+      padding: 40px;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      width: 100%;
+      height: 70vh;
+      text-align: center;
+      background-color: rgb(21, 15, 65);
+      transition: all 1s ease;
+   }
+
+   header input:checked ~ .main-navbar ul{
+      display: block;
+   }
+   header .main-navbar ul li{
+      margin-bottom: 20px;
+   }
+   .experience-card-wrapper, .project-card-wrapper{
+      flex-direction: column;
+   }
+   .experince-card{
+      width: 100%;
+      padding: 40px;
+   }
+   .project-card{
+      width: 100%;
+   }
+
+   .form-field-wrapper{
+      flex-direction: column;
+      padding: 20px;
+   }
+   .message-box, .input-box{
+      min-width: 100%;
+   }
+   .container .section{
+      padding: 80px 20px;
+   }
+}
+
+
+
+
+
+
